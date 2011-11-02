@@ -1,11 +1,17 @@
 ﻿<Properties>
   <AuthorInfo Name="Caleb Gibbs" Email="cmacgibbs@gmail.com" Copyright="Caleb Gibbs" Company="Day7Tech" Trademark="" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CraftServ/CraftServ.cs">
+    <Files>
+      <File FileName="CraftServ/CraftServ.cs" Line="30" Column="4" />
+      <File FileName="CraftServ/LICENSE.txt" Line="675" Column="51" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="CraftServ" expanded="True" />
+        <State expanded="True">
+          <Node name="CraftServ" expanded="True">
+            <Node name="CraftServ.cs" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
