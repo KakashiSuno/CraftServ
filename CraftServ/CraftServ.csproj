@@ -43,6 +43,9 @@
     <Compile Include="CraftServ.cs" />
     <Compile Include="csConsole.cs" />
     <Compile Include="csLogger.cs" />
+    <Compile Include="Packets\csListener.cs" />
+    <Compile Include="csConfig.cs" />
+    <Compile Include="Packets\Packet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

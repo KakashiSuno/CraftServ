@@ -1,5 +1,5 @@
 //  
-//  CraftServ.cs
+//  csConfig.cs
 //  
 //  Author:
 //       Caleb Gibbs <cmacgibbs@gmail.com>
@@ -18,37 +18,21 @@
 // 
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 using System;
-using System.Threading;
 
 namespace CraftServ
 {
-	public class CraftServ
+	public static class csConfig
 	{
-		public static void Main(string[] args)
-		{
-			new CraftServ();
-		}
-		public static bool isRunning = true;
+		public static byte Protocol = 17;
+		public static long MapSeed = 0;
+		public static int GameMode = 1;
+		public static byte Dimension = 0;
+		public static byte Dificulty = 0;
+		public static readonly byte WorldHeight = 128;
+		public static byte MaxPlayers = 8;
 		
-		csConsole console;
-		Thread tickThread;
 		
-		public CraftServ ()
-		{
-			csLogger.Init();
-			console = new csConsole();
-			
-		}
-		
-		void Update()
-		{
-			while(isRunning)
-			{
-				Thread.Sleep(50); // Vanilla server runs at 20 ticks per second
-			}
-		}
 	}
 }
 

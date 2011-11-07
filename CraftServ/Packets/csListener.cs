@@ -1,5 +1,5 @@
 //  
-//  CraftServ.cs
+//  csListener.cs
 //  
 //  Author:
 //       Caleb Gibbs <cmacgibbs@gmail.com>
@@ -21,32 +21,20 @@
 
 using System;
 using System.Threading;
+using System.Net;
+using System.Net.Sockets;
 
-namespace CraftServ
+namespace CraftServ.Packets
 {
-	public class CraftServ
+	public class csListener
 	{
-		public static void Main(string[] args)
-		{
-			new CraftServ();
-		}
-		public static bool isRunning = true;
+		TcpListener listener;
 		
-		csConsole console;
-		Thread tickThread;
-		
-		public CraftServ ()
+		public csListener ()
 		{
-			csLogger.Init();
-			console = new csConsole();
-			
-		}
-		
-		void Update()
-		{
-			while(isRunning)
+			while(CraftServ.CraftServ.isRunning)
 			{
-				Thread.Sleep(50); // Vanilla server runs at 20 ticks per second
+				Thread.Sleep(100);
 			}
 		}
 	}
